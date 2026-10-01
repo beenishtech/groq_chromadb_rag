@@ -1,0 +1,12 @@
+In-Depth Technical Overview of Retrieval-Augmented Generation (RAG):
+Retrieval-Augmented Generation (RAG) is a sophisticated architectural pattern designed to improve the accuracy and reliability of generative AI models by fetching relevant facts from an external data source before generating a response.
+
+1. Why RAG is Essential:
+Traditional Large Language Models (LLMs) rely entirely on parameters learned during pre-training. This can lead to hallucinations, outdated information, and an inability to answer questions regarding private, proprietary company documents. RAG bridges this gap by grounding the model in factual, verified external data.
+
+2. Step-by-Step Workflow of this Project:
+- Document Loading & Parsing: The system scans the data directory using document loaders to extract raw text from files like PDFs, markdown files, and text documents[cite: 3].
+- Text Chunking: Large documents are broken down into smaller, manageable text segments (chunks) with strategic overlaps to preserve contextual meaning.
+- Local Embeddings: The open-source SentenceTransformers library converts these text chunks into dense vector representations locally on your machine without requiring paid API calls[cite: 3].
+- Vector Database Storage: ChromaDB securely stores these embeddings, original text segments, and comprehensive metadata (source filenames, page numbers, and chunk indices)[cite: 3].
+- Retrieval and Generation: When a user asks a query, the system embeds the question, queries ChromaDB for the most semantically similar text vectors, constructs a detailed context block, and passes it to the Groq API LLM to synthesize an accurate, source-cited final answer[cite: 3].

@@ -1,0 +1,18 @@
+Corporate IT Security Guidelines and Best Practices Manual:
+Protecting company data, intellectual property, and internal networks is a critical responsibility for all employees. Adherence to these security protocols is mandatory across all departments.
+
+1. Password Management and Credentials:
+- All employees must use the corporate-approved enterprise password manager to generate and store secure credentials.
+- Passwords must be at least 12 characters long and must include a secure mix of uppercase letters, lowercase letters, numbers, and special symbols.
+- Reusing old passwords is strictly prohibited, and passwords must be updated every 90 days.
+
+2. Two-Factor Authentication (2FA):
+- Two-factor authentication (2FA) via an authenticator app or hardware token must be enabled on all corporate email accounts, cloud storage drives, VPNs, and version control systems (like GitHub or GitLab).
+
+3. Device and Software Security:
+- Operating systems, web browsers, and corporate antivirus solutions must be updated to their latest versions weekly. Automatic background updates should never be turned off.
+- Company laptops must never be left unattended in public spaces and must be locked immediately whenever you step away from your desk.
+
+4. Phishing and Social Engineering Awareness:
+- Exercise extreme caution when opening unsolicited emails, unexpected messages, or clicking external links. Always verify the sender's email address carefully.
+- Never download unverified attachments or share login credentials over phone, chat, or social media. Report any suspected phishing attempts or security anomalies immediately to the IT security department at security@company.com.
